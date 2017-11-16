@@ -10,6 +10,7 @@
 		357367791FBB5D0D00E9D380 /* BowlingGamePresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3573676F1FBB5D0D00E9D380 /* BowlingGamePresentation.framework */; };
 		3573677E1FBB5D0D00E9D380 /* BowlingGamePresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573677D1FBB5D0D00E9D380 /* BowlingGamePresentationTests.swift */; };
 		357367801FBB5D0E00E9D380 /* BowlingGamePresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 357367721FBB5D0D00E9D380 /* BowlingGamePresentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3573678A1FBB5DEC00E9D380 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357367891FBB5DEC00E9D380 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		357367781FBB5D0D00E9D380 /* BowlingGamePresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingGamePresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3573677D1FBB5D0D00E9D380 /* BowlingGamePresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGamePresentationTests.swift; sourceTree = "<group>"; };
 		3573677F1FBB5D0E00E9D380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		357367891FBB5DEC00E9D380 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				357367721FBB5D0D00E9D380 /* BowlingGamePresentation.h */,
 				357367731FBB5D0D00E9D380 /* Info.plist */,
+				357367891FBB5DEC00E9D380 /* Game.swift */,
 			);
 			path = BowlingGamePresentation;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					3573676E1FBB5D0D00E9D380 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					357367771FBB5D0D00E9D380 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3573678A1FBB5DEC00E9D380 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +338,7 @@
 		357367841FBB5D0E00E9D380 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxcode.BowlingGamePresentation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -354,6 +361,7 @@
 		357367851FBB5D0E00E9D380 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -375,6 +383,7 @@
 		357367871FBB5D0E00E9D380 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = BowlingGamePresentationTests/Info.plist;
@@ -388,6 +397,7 @@
 		357367881FBB5D0E00E9D380 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = BowlingGamePresentationTests/Info.plist;
